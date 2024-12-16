@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion with Discounts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- BOGO Header Section -->
+<div class="bogo-header">
+    <div class="line"></div>
+    <span class="bogo-text">YAY! It’s BOGO</span>
+    <div class="line"></div>
+</div>
+
+<!-- Accordion Item 1 -->
+<div class="accordion-item">
+    <div class="accordion-header">
+        <div class="header-left">
+            <label>
+                <input type="radio" name="unit-select" class="round-select" onclick="highlightAccordion(this)">
+            </label>
+            <div>
+                <span>1 Unit</span>
+                <span class="discount-label">10% OFF</span>
+                <div class="standard-price">Standard Price</div>
+            </div>
+        </div>
+        <span class="price-details">
+                <span class="discount-price">$10.00 USD</span>
+                <span class="original-price">$24.00 USD</span>
+            </span>
+    </div>
+    <div class="accordion-content">
+        <div class="dropdowns">
+            <!-- Size Dropdown -->
+            <div class="dropdown">
+                <label for="size1">Size</label>
+                <div>
+                    <label>#1</label>
+                    <select id="size1" class="small-dropdown">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="size2">#2</label>
+                    <select id="size2" class="small-dropdown">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Colour Dropdown -->
+            <div class="dropdown">
+                <label for="color1">Colour</label>
+                <select id="color1" class="small-dropdown">
+                    <option value="Black">Black</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                </select>
+                <label for="color2"></label><select id="color2" class="small-dropdown">
+                    <option value="Black">Black</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Accordion Item 2 -->
+<div class="accordion-item">
+    <div class="accordion-header">
+        <div class="header-left">
+            <label>
+                <input type="radio" name="unit-select" class="round-select" onclick="highlightAccordion(this)">
+            </label>
+            <span>2 Unit <span class="discount-label">20% OFF</span></span>
+        </div>
+        <div class="ribbon-wrapper">
+            <span class="most-popular">MOST POPULAR</span>
+        </div>
+        <span class="price-details">
+                <span class="discount-price">$18.00 USD</span>
+                <span class="original-price">$24.00 USD</span>
+            </span>
+    </div>
+    <div class="accordion-content">
+        <div class="dropdowns">
+            <!-- Size Dropdown -->
+            <div class="dropdown">
+                <label for="size3">Size</label>
+                <div>
+                    <label>#1</label>
+                    <select id="size3" class="small-dropdown">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="size4">#2</label>
+                    <select id="size4" class="small-dropdown">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Colour Dropdown -->
+            <div class="dropdown">
+                <label for="color3">Colour</label>
+                <select id="color3" class="small-dropdown">
+                    <option value="Black">Black</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                </select>
+                <label for="color4"></label><select id="color4" class="small-dropdown">
+                    <option value="Black">Black</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Accordion Item 3 -->
+<div class="accordion-item">
+    <div class="accordion-header">
+        <div class="header-left">
+            <label>
+                <input type="radio" name="unit-select" class="round-select" onclick="highlightAccordion(this)">
+            </label>
+            <span>3 Unit <span class="discount-label">30% OFF</span></span>
+        </div>
+        <span class="price-details">
+                <span class="discount-price">$24.00 USD</span>
+                <span class="original-price">$24.00 USD</span>
+            </span>
+    </div>
+    <div class="accordion-content">
+        <div class="dropdowns">
+            <!-- Size Dropdown -->
+            <div class="dropdown">
+                <label for="size5">Size</label>
+                <div>
+                    <label>#1</label>
+                    <select id="size5" class="small-dropdown">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="size6">#2</label>
+                    <select id="size6" class="small-dropdown">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Colour Dropdown -->
+            <div class="dropdown">
+                <label for="color5">Colour</label>
+                <select id="color5" class="small-dropdown">
+                    <option value="Black">Black</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                </select>
+                <label for="color6"></label><select id="color6" class="small-dropdown">
+                    <option value="Black">Black</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Summary Section -->
+<div class="summary">
+    <span class="free-delivery">Free Delivery</span>
+    <span>Total: $270 USD</span>
+</div>
+
+<!-- Add to Cart Button -->
+<div class="add-to-cart-button">
+    <button>Add to Cart</button>
+</div>
+
+<!-- Script for Interactivity -->
+<script src="scripts.js"></script>
+
+</body>
+
+</html>
